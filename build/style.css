@@ -38,7 +38,7 @@ body {
 
 .qr-component {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   place-items: center;
   height: 100vh;
 }
@@ -47,6 +47,7 @@ body {
   max-width: 32rem;
   padding: var(--space-200);
   background-color: var(--white);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: var(--radius-400);
   overflow: hidden;
 }
