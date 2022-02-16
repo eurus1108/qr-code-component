@@ -72,6 +72,7 @@ body {
   padding: 0 var(--space-200);
   font-size: var(--font-size-400);
   letter-spacing: 0.005em;
+  color: var(--dark-blue);
 }
 
 .qr-component__paragraph p {
