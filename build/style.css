@@ -1,0 +1,87 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --font-size-400: 2.2rem;
+  --font-size-200: 1.5rem;
+  --space-400: 2.4rem;
+  --space-300: 1.6rem;
+  --space-200: 1.6rem;
+  --radius-400: 2rem;
+  --radius-200: 1rem;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  font-family: "Outfit", sans-serif;
+  font-size: var(--font-size-200);
+  color: var(--grayish-blue);
+  background-color: var(--light-gray);
+}
+
+.qr-component {
+  display: grid;
+  grid-template-columns: 1;
+  place-items: center;
+  height: 100vh;
+}
+
+.qr-component__card {
+  max-width: 32rem;
+  padding: var(--space-200);
+  background-color: var(--white);
+  border-radius: var(--radius-400);
+  overflow: hidden;
+}
+
+.qr-component__img {
+  width: 28.8rem;
+  border-radius: var(--radius-200);
+  overflow: hidden;
+}
+
+.qr-component__img img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.qr-component__paragraph {
+  text-align: center;
+  padding: var(--space-400) 0;
+}
+
+.qr-component__paragraph h1 {
+  margin-bottom: var(--space-200);
+  padding: 0 var(--space-200);
+  font-size: var(--font-size-400);
+  letter-spacing: 0.005em;
+}
+
+.qr-component__paragraph p {
+  padding: 0 var(--space-300);
+  letter-spacing: 0.01em;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
