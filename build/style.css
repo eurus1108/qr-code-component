@@ -36,6 +36,11 @@ body {
   background-color: var(--light-gray);
 }
 
+main {
+  position: relative;
+  padding: 0 2.4rem;
+}
+
 .qr-component {
   display: grid;
   grid-template-columns: 1fr;
@@ -44,6 +49,7 @@ body {
 }
 
 .qr-component__card {
+  width: 100%;
   max-width: 32rem;
   padding: var(--space-200);
   background-color: var(--white);
@@ -53,13 +59,14 @@ body {
 }
 
 .qr-component__img {
-  width: 28.8rem;
+  width: 100%;
+  max-width: 28.8rem;
   border-radius: var(--radius-200);
   overflow: hidden;
 }
 
 .qr-component__img img {
-  max-width: 100%;
+  width: 100%;
   vertical-align: middle;
 }
 
